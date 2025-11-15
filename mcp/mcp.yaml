@@ -1,0 +1,16 @@
+transport:
+  type: streamable_http
+operations:
+  source: local
+  paths:
+    - ./mcp/operations/GetListingDetails.graphql
+    - ./mcp/operations/GetUser.graphql
+introspection:
+  execute:
+    enabled: true
+  introspect:
+    enabled: true
+  search:
+    enabled: true
+  validate:
+    enabled: true

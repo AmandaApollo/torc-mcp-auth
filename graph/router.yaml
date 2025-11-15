@@ -1,0 +1,11 @@
+supergraph:
+  listen: "127.0.0.1:4000"
+# This headers config below is for workshop development purposes only.
+# In this workshop, we will use a co-processor and JWT token to authenticate the user properly and properly configure the MCP server to use OAuth.
+headers:
+  all:
+    request:
+      - propagate:
+          named: "Authorization"
+include_subgraph_errors:
+  all: true
